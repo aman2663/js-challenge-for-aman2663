@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Users</h1>
+    <div id="form-details">
+        <form onsubmit="return false">
+        <input type="text" placeholder="First Name" minlength="3" id="firstname" value="" required /> <br />
+        <input type="text" placeholder="Last Name" minlength="3" id="lastname" value="" required /> <br />
+        <input type="text" placeholder="Username" id="username" value="" required /> <br />
+        <input type="email" placeholder="Email" id="email" value="" required /> <br />
+        <input type="text" placeholder="Address" id="address" value="" required /> <br />
+        <input type="tel" placeholder="Phone Format:123-456-7890" id="phone" value=""  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br />
+        <input type="url" placeholder="Website_Link" id="website" value="" /> <br />
+        <input type="text" placeholder="Company Name" id="company_name" value="" /> <br />
+        <input type="submit" value="Submit" id="button" />
+    </form>
+    </div>
+    <p id="Name"></p>
+    <table id="myTable">
+        <tr>
+            <th>Sr. No.</th>
+            <th>Name</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Phone</th>
+            <th>Website</th>
+            <th>Company name</th>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
